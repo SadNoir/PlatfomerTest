@@ -150,12 +150,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpPower: 20
+  coyoteTime: 0.25
+  extraJumps: 1
+  wallJumpX: 2000
+  wallJumpY: 750
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
+  jumpSound: {fileID: 8300000, guid: 20485f8d7049ee44b98655839a9bbcda, type: 3}
 --- !u!114 &1316690849677307589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +186,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  fireballSound: {fileID: 8300000, guid: 09da7a5849b6f3344be3a8a18aea6cdf, type: 3}
 --- !u!95 &1316690849677307588
 Animator:
   serializedVersion: 3
@@ -218,6 +224,8 @@ MonoBehaviour:
   components:
   - {fileID: 1316690849677307591}
   - {fileID: 1316690849677307589}
+  deathSound: {fileID: 8300000, guid: ae257c59c7444d441bcf047b3a432d5c, type: 3}
+  hurtSound: {fileID: 8300000, guid: 3b6f65ccc2349cd4981baaf50a407ffc, type: 3}
 --- !u!1 &1316690849727140688
 GameObject:
   m_ObjectHideFlags: 0
